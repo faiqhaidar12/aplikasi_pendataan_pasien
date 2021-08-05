@@ -16,4 +16,19 @@ class DokterModel extends Model
     {
         return DB::table('tbl_dokter')->where('id_dokter', $id_dokter)->first();
     }
+
+    public function addData($data)
+    {
+        DB::table('tbl_dokter')->insert($data);
+    }
+
+    public function editData($id_dokter, $data)
+    {
+        DB::table('tbl_dokter')->where('id_dokter', $id_dokter)->update($data);
+    }
+
+    public function deleteData($id_dokter)
+    {
+        DB::table('tbl_dokter')->where('id_dokter', $id_dokter)->delete();
+    }
 }

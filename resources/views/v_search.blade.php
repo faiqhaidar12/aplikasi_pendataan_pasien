@@ -58,8 +58,8 @@
                 <th>{{$data->no_bpjs}}</th>
                 <th>{{$data->nama_pasien}}</th>
                 <th>{{$data->alamat}}</th>
-                <th>{{$data->status}}</th>
-                <th>{{$data->golongan}}</th>
+                <th>{{$data->id_status}}</th>
+                <th>{{$data->id_golongan}}</th>
                 <td>
                     <a href="/pasien/edit/{{$data->id_pasien}}" class="btn btn-warning">Edit</a>
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete{{$data->id_pasien}}">
